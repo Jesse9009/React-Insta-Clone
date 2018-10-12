@@ -21,7 +21,7 @@ class CommentsContainer extends React.Component {
       comments: [
         ...this.state.comments,
         {
-          username: 'jander9009',
+          username: localStorage.getItem('user'),
           text: this.state.inputValue
         }
       ],
