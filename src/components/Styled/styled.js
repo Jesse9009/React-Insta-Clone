@@ -59,13 +59,26 @@ export const SearchBarWrapper = styled.div`
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 800px) {
+    // flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 `;
 
 export const SBLogo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 11%;
+  width: 15%;
+  padding-right: 5%;
+
+  @media (max-width: 800px) {
+  }
 `;
 
 export const SBhr = styled.hr`
@@ -77,20 +90,45 @@ export const SearchBarInput = styled.input`
   display: flex;
   align-items: center;
   text-align: center;
-  width: 150%;
+  width: 100%;
   height: 20px;
   border-radius: 2px;
   border: 1px solid rgb(182, 182, 182);
   outline: none;
+
+  @media (max-width: 800px) {
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+  }
+`;
+
+export const SearchBarInputWrapper = styled.form`
+  width: 35%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    order: 1;
+  }
 `;
 
 export const SBIcons = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  width: 20%;
   font-size: 1.6rem;
   font-weight: lighter;
   padding-right: 1rem;
+
+  @media (max-width: 800px) {
+    margin-left: 20%;
+    width: 40%;
+    padding: 15px 0;
+    align-items: center;
+  }
 `;
 
 export const SBListItem = styled.li`
