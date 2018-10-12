@@ -27,7 +27,7 @@ export const AuthenticationWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 40%;
-  min-width: 500px;
+  min-width: 300px;
   margin: 0 auto;
   background-color: rgb(184, 233, 253);
   color: #313131;
